@@ -76,7 +76,7 @@
                         href="/#contact"
                         data-i18n="ctaBlockTitle"
                         onclick="
-                        tracking('main_menu_cta_click', 'CTA', 'Main Menu CTA', 'AW-16905609495/CReZCNfPrP4aEJfCnP0-');">
+                        fbq('track','Lead');">
                     Kapcsolat
                 </a>
                 </li>
@@ -125,7 +125,7 @@
                 72 órán belül megoldjuk – vagy visszaadjuk a pénzed.
             </p>
             <a href="tel:+36304915909" class="hero-cta" onclick="
-            tracking('hero_cta', 'CTA', 'Hero CTA', 'AW-16905609495/xfF-CNjcmYAbEJfCnP0-');"
+            fbq('track','Lead');"
                data-i18n="bookButton">
                 Időpontfoglalás
             </a>
@@ -376,7 +376,7 @@
         <p class="section-text" data-i18n="contactSubtitle">Beszéljük át projekted – az első konzultáció ingyenes és
             kötelezettségmentes.</p>
         <a href="tel:+36304915909" class="cta-button" onclick="
-        tracking('final_cta', 'CTA', 'Final CTA', 'AW-16905609495/GgNCCIPzmYAbEJfCnP0-');"
+        fbq('track','Lead');"
            data-i18n="ctaBlockButton">Kérek ajánlatot
         </a>
     </section>
@@ -441,19 +441,36 @@
    class="sticky-cta"
    data-i18n="stickyCTA"
    onclick="
-   tracking('sticky_cta', 'CTA', 'Sticky CTA', 'AW-16905609495/V-zqCMrQrv4aEJfCnP0-');">
+   fbq('track','Lead');">
     💬 Ajánlatkérés
 </a>
 
 <script src="/translations.min.js" defer></script>
 <script src="/script.min.js" defer></script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '800676979731768');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=800676979731768&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Madmasel Autófelvásárlás",
         "url": "https://madmaselfelvasarlas.hu/",
-        "logo": "https://beyondstart.solutions/images/madmasel_logo_sm.webp",
+        "logo": "https://madmaselfelvasarlas.hu/images/madmasel_logo_sm.webp",
         "sameAs": [],
         "contactPoint": {
             "@type": "ContactPoint",
@@ -467,17 +484,6 @@
             ]
         }
     }
-</script>
-<!--script async src="https://www.googletagmanager.com/gtag/js?id=AW-16905609495"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16882358510"></script-->
-<script>
-    /*window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'AW-16905609495');
-    gtag('config', 'AW-16882358510');*/
 </script>
 </body>
 </html>
