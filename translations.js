@@ -114,7 +114,90 @@ const translations = {
     termsServicesText: 'A weboldal autófelvásárlási ajánlatkérésre és kapcsolattartásra szolgál.',
     termsPaymentText:
       'A vételár kifizetése minden esetben egyedi megállapodás alapján történik (készpénz vagy banki utalás).',
-    termsGoverningLaw: 'Az ÁSZF-re a szolgáltató székhelye szerinti jog az irányadó.'
+    termsGoverningLaw: 'Az ÁSZF-re a szolgáltató székhelye szerinti jog az irányadó.',
+    footerCompanyDetails:
+      'Rövidített név: MADMASEL AUTOTRADE Kft.<br />' +
+      'Teljes név: MADMASEL AUTOTRADE Korlátolt Felelősségű Társaság<br />' +
+      'Alapítás éve: 2016<br />' +
+      'Adószám: 25562242-2-42<br />' +
+      'EU Adószám: HU25562242',
+
+    // Footer / common
+    jumpToMainContent: 'Ugrás a fő tartalomra',
+    footerLegal: 'Jogi dokumentumok',
+    footerImprint: 'Impresszum',
+    footerPrivacy: 'Adatvédelmi irányelvek',
+    footerCookies: 'Cookie tájékoztató',
+    footerTerms: 'ÁSZF',
+    footerContact: 'Kapcsolat',
+    footerEmail: 'E-mail:',
+    footerPhone: 'Telefon:',
+    footerNav: 'Navigáció',
+    footerNavHome: 'Főoldal',
+    footerNavServices: 'Szolgáltatások',
+    footerNavAbout: 'Rólunk',
+    footerNavContact: 'Kapcsolat',
+
+    // Impresszum
+    imprintTitle: 'Impresszum',
+    imprintIntro: 'Jelen weboldal üzemeltetője:',
+    imprintCompanyLabel: 'Cégnév:',
+    imprintCompanyName: 'MADMASEL AUTOTRADE Korlátolt Felelősségű Társaság',
+    imprintAddressLabel: 'Székhely:',
+    imprintAddress: 'Feltöltés alatt',
+    imprintTaxLabel: 'Adószám:',
+    imprintTaxNumber: '25562242-2-42',
+    imprintRegLabel: 'Cégjegyzékszám:',
+    imprintRegNumber: 'Feltöltés alatt',
+    imprintContactPersonLabel: 'Kapcsolattartó személy:',
+    imprintContactPerson: 'Feltöltés alatt',
+    imprintCopyright:
+      'A weboldalon szereplő minden szöveges és képi tartalom a MADMASEL AUTOTRADE Kft. tulajdona, illetve engedéllyel kerül felhasználásra.',
+
+    // Adatvédelem
+    privacyTitle: 'Adatvédelmi irányelvek',
+    privacyIntro:
+      'A MADMASEL AUTOTRADE Kft. elkötelezett az Ön személyes adatainak védelme iránt. ' +
+      'Az adatkezelés célja az ajánlatkérés kezelése, kapcsolattartás és a weboldal működtetése.',
+    privacySection1: '1. Adatkezelő',
+    privacyDataController:
+      'MADMASEL AUTOTRADE Kft.<br>' +
+      'Adószám: 25562242-2-42<br>' +
+      'EU Adószám: HU25562242<br>' +
+      'Alapítás éve: 2016<br>' +
+      'Telefon: <a href="tel:+36304915909">+36 30 491 59 09</a><br>' +
+      'Székhely: feltöltés alatt',
+    privacySection2: '2. Gyűjtött adatok',
+    privacyItem1: 'Kapcsolati adatok (név, e-mail, telefonszám)',
+    privacyItem2: 'Weboldal használati adatok (cookie-k, IP-cím, böngésző típusa)',
+    privacySection3: '3. Adatkezelés célja',
+    privacyItem3: 'Kapcsolattartás és ügyfélszolgálat',
+    privacyItem4: 'Ajánlatkérés kezelése és a folyamat lebonyolítása',
+    privacyItem5: 'Jogszabályi kötelezettségek teljesítése',
+    privacySection4: '4. Adatok tárolása',
+    privacyStorage:
+      'Az adatokat biztonságos környezetben tároljuk, és csak a szükséges ideig őrizzük meg őket.',
+    privacySection5: '5. Az Ön jogai',
+    privacyRight1: 'Tájékoztatás kéréséhez való jog',
+    privacyRight2: 'Adatok helyesbítéséhez való jog',
+    privacyRight3: 'Adatok törléséhez való jog',
+    privacyRight4: 'Adathordozhatósághoz való jog',
+    privacyContactNote:
+      'További információért kérjük, vegye fel velünk a kapcsolatot telefonon vagy e-mailben.',
+
+    // ÁSZF
+    termsTitle: 'Általános Szerződési Feltételek (ÁSZF)',
+    termsIntro:
+      'Jelen dokumentum a MADMASEL AUTOTRADE Kft. által üzemeltetett madmaselfelvasarlas.hu weboldalon ' +
+      'történő autófelvásárlási ajánlatkérés feltételeit tartalmazza.',
+    termsServices: 'Szolgáltatások',
+    termsPayment: 'Díjazás és fizetési feltételek',
+    termsCancellation: 'Lemondási feltételek',
+    termsCancellationText:
+      'Az ajánlatkérés és az időpont-egyeztetés díjmentes, és bármikor lemondható.',
+    termsLiability: 'Felelősség korlátozása',
+    termsLiabilityText:
+      'Az előzetes ajánlat tájékoztató jellegű. A végleges vételár a helyszíni állapotfelmérés és egyeztetés után kerül meghatározásra.'
   },
   en: {
     footerCompanyName: 'Madmasel Car Buying',
@@ -233,7 +316,84 @@ const translations = {
     termsServicesText:
       'This website is used for requesting car-buying offers and for communication.',
     termsPaymentText: 'Payment is always based on an individual agreement (cash or bank transfer).',
-    termsGoverningLaw: 'These terms are governed by the law of the provider’s registered seat.'
+    termsGoverningLaw: 'These terms are governed by the law of the provider’s registered seat.',
+    footerCompanyDetails:
+      'Short name: MADMASEL AUTOTRADE Kft.<br />' +
+      'Full name: MADMASEL AUTOTRADE Limited Liability Company<br />' +
+      'Founded: 2016<br />' +
+      'Tax number: 25562242-2-42<br />' +
+      'EU VAT: HU25562242',
+
+    jumpToMainContent: 'Skip to main content',
+    footerLegal: 'Legal documents',
+    footerImprint: 'Imprint',
+    footerPrivacy: 'Privacy policy',
+    footerCookies: 'Cookie policy',
+    footerTerms: 'Terms',
+    footerContact: 'Contact',
+    footerEmail: 'Email:',
+    footerPhone: 'Phone:',
+    footerNav: 'Navigation',
+    footerNavHome: 'Home',
+    footerNavServices: 'Services',
+    footerNavAbout: 'About',
+    footerNavContact: 'Contact',
+
+    imprintTitle: 'Imprint',
+    imprintIntro: 'Website operator:',
+    imprintCompanyLabel: 'Company name:',
+    imprintCompanyName: 'MADMASEL AUTOTRADE Limited Liability Company',
+    imprintAddressLabel: 'Registered office:',
+    imprintAddress: 'Coming soon',
+    imprintTaxLabel: 'Tax number:',
+    imprintTaxNumber: '25562242-2-42',
+    imprintRegLabel: 'Company registration no.:',
+    imprintRegNumber: 'Coming soon',
+    imprintContactPersonLabel: 'Contact person:',
+    imprintContactPerson: 'Coming soon',
+    imprintCopyright:
+      'All text and images on this website are the property of MADMASEL AUTOTRADE Kft. or are used with permission.',
+
+    privacyTitle: 'Privacy policy',
+    privacyIntro:
+      'MADMASEL AUTOTRADE Kft. is committed to protecting your personal data. ' +
+      'We process data to handle quote requests, communicate with you, and operate the website.',
+    privacySection1: '1. Data controller',
+    privacyDataController:
+      'MADMASEL AUTOTRADE Kft.<br>' +
+      'Tax number: 25562242-2-42<br>' +
+      'EU VAT: HU25562242<br>' +
+      'Founded: 2016<br>' +
+      'Phone: <a href="tel:+36304915909">+36 30 491 59 09</a><br>' +
+      'Registered office: coming soon',
+    privacySection2: '2. Collected data',
+    privacyItem1: 'Contact details (name, email, phone number)',
+    privacyItem2: 'Website usage data (cookies, IP address, browser type)',
+    privacySection3: '3. Purpose of processing',
+    privacyItem3: 'Communication and customer support',
+    privacyItem4: 'Handling quote requests and process management',
+    privacyItem5: 'Compliance with legal obligations',
+    privacySection4: '4. Data storage',
+    privacyStorage: 'We store data in a secure environment and keep it only as long as necessary.',
+    privacySection5: '5. Your rights',
+    privacyRight1: 'Right to information',
+    privacyRight2: 'Right to rectification',
+    privacyRight3: 'Right to erasure',
+    privacyRight4: 'Right to data portability',
+    privacyContactNote: 'For more information, please contact us by phone or email.',
+
+    termsTitle: 'Terms and Conditions',
+    termsIntro:
+      'This document sets out the terms for requesting car-buying offers on madmaselfelvasarlas.hu, ' +
+      'operated by MADMASEL AUTOTRADE Kft.',
+    termsServices: 'Services',
+    termsPayment: 'Payment terms',
+    termsCancellation: 'Cancellation',
+    termsCancellationText:
+      'Requesting a quote and scheduling are free of charge and can be cancelled at any time.',
+    termsLiability: 'Limitation of liability',
+    termsLiabilityText:
+      'Any preliminary offer is indicative only. The final purchase price is determined after an on-site inspection and agreement.'
   },
   de: {
     footerCompanyName: 'Madmasel Autoankauf',
@@ -353,6 +513,85 @@ const translations = {
       'Diese Website dient zur Anfrage von Autoankauf-Angeboten und zur Kontaktaufnahme.',
     termsPaymentText:
       'Die Auszahlung erfolgt immer auf Basis einer individuellen Vereinbarung (bar oder per Überweisung).',
-    termsGoverningLaw: 'Es gilt das Recht am Sitz des Anbieters.'
+    termsGoverningLaw: 'Es gilt das Recht am Sitz des Anbieters.',
+    footerCompanyDetails:
+      'Kurzname: MADMASEL AUTOTRADE Kft.<br />' +
+      'Vollständiger Name: MADMASEL AUTOTRADE Gesellschaft mit beschränkter Haftung<br />' +
+      'Gründungsjahr: 2016<br />' +
+      'Steuernummer: 25562242-2-42<br />' +
+      'EU-USt-IdNr.: HU25562242',
+
+    jumpToMainContent: 'Zum Hauptinhalt springen',
+    footerLegal: 'Rechtliches',
+    footerImprint: 'Impressum',
+    footerPrivacy: 'Datenschutz',
+    footerCookies: 'Cookie-Hinweis',
+    footerTerms: 'AGB',
+    footerContact: 'Kontakt',
+    footerEmail: 'E-Mail:',
+    footerPhone: 'Telefon:',
+    footerNav: 'Navigation',
+    footerNavHome: 'Startseite',
+    footerNavServices: 'Leistungen',
+    footerNavAbout: 'Über uns',
+    footerNavContact: 'Kontakt',
+
+    imprintTitle: 'Impressum',
+    imprintIntro: 'Betreiber dieser Website:',
+    imprintCompanyLabel: 'Firmenname:',
+    imprintCompanyName: 'MADMASEL AUTOTRADE Gesellschaft mit beschränkter Haftung',
+    imprintAddressLabel: 'Sitz:',
+    imprintAddress: 'Folgt in Kürze',
+    imprintTaxLabel: 'Steuernummer:',
+    imprintTaxNumber: '25562242-2-42',
+    imprintRegLabel: 'Handelsregisternr.:',
+    imprintRegNumber: 'Folgt in Kürze',
+    imprintContactPersonLabel: 'Ansprechpartner:',
+    imprintContactPerson: 'Folgt in Kürze',
+    imprintCopyright:
+      'Alle Texte und Bilder auf dieser Website sind Eigentum der MADMASEL AUTOTRADE Kft. oder werden mit Genehmigung verwendet.',
+
+    privacyTitle: 'Datenschutz',
+    privacyIntro:
+      'Die MADMASEL AUTOTRADE Kft. verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. ' +
+      'Wir verarbeiten Daten zur Angebotsanfrage, zur Kommunikation und zum Betrieb der Website.',
+    privacySection1: '1. Verantwortlicher',
+    privacyDataController:
+      'MADMASEL AUTOTRADE Kft.<br>' +
+      'Steuernummer: 25562242-2-42<br>' +
+      'EU-USt-IdNr.: HU25562242<br>' +
+      'Gründungsjahr: 2016<br>' +
+      'Telefon: <a href="tel:+36304915909">+36 30 491 59 09</a><br>' +
+      'Sitz: folgt in Kürze',
+    privacySection2: '2. Erhobene Daten',
+    privacyItem1: 'Kontaktdaten (Name, E-Mail, Telefonnummer)',
+    privacyItem2: 'Nutzungsdaten der Website (Cookies, IP-Adresse, Browsertyp)',
+    privacySection3: '3. Zweck der Verarbeitung',
+    privacyItem3: 'Kontakt und Kundenservice',
+    privacyItem4: 'Bearbeitung von Angebotsanfragen und Prozessabwicklung',
+    privacyItem5: 'Erfüllung gesetzlicher Pflichten',
+    privacySection4: '4. Speicherung',
+    privacyStorage:
+      'Wir speichern Daten in einer sicheren Umgebung und nur so lange wie erforderlich.',
+    privacySection5: '5. Ihre Rechte',
+    privacyRight1: 'Recht auf Auskunft',
+    privacyRight2: 'Recht auf Berichtigung',
+    privacyRight3: 'Recht auf Löschung',
+    privacyRight4: 'Recht auf Datenübertragbarkeit',
+    privacyContactNote:
+      'Für weitere Informationen kontaktieren Sie uns bitte telefonisch oder per E-Mail.',
+
+    termsTitle: 'Allgemeine Geschäftsbedingungen (AGB)',
+    termsIntro:
+      'Dieses Dokument regelt die Bedingungen für die Anfrage von Autoankauf-Angeboten auf madmaselfelvasarlas.hu, ' +
+      'betrieben von der MADMASEL AUTOTRADE Kft.',
+    termsServices: 'Leistungen',
+    termsPayment: 'Zahlungsbedingungen',
+    termsCancellation: 'Stornierung',
+    termsCancellationText:
+      'Die Angebotsanfrage und Terminvereinbarung sind kostenlos und können jederzeit storniert werden.',
+    termsLiability: 'Haftungsbeschränkung',
+    termsLiabilityText:
+      'Ein Vorab-Angebot ist unverbindlich. Der endgültige Kaufpreis wird nach Besichtigung und Vereinbarung festgelegt.'
   }
 };
