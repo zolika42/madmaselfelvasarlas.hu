@@ -1,0 +1,98 @@
+#ddev-generated
+# If you remove the ddev-generated line above you
+# are responsible for maintaining this file. DDEV will not then
+# update it, for example if you add `additional_hostnames`, etc.
+
+http:
+  routers:
+    beyondstart2-xhgui-80-http:
+      entrypoints:
+        - http-8143
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-xhgui-80"
+      tls: false
+      # middlewares:
+      #   - "beyondstart2-redirectHttps"
+    beyondstart2-web-80-http:
+      entrypoints:
+        - http-80
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-web-80"
+      tls: false
+      # middlewares:
+      #   - "beyondstart2-redirectHttps"
+    beyondstart2-web-8025-http:
+      entrypoints:
+        - http-33000
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-web-8025"
+      tls: false
+      # middlewares:
+      #   - "beyondstart2-redirectHttps"
+    
+    
+    beyondstart2-xhgui-80-https:
+      entrypoints:
+        - http-8142
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-xhgui-80"
+      
+      tls: true
+      
+    
+    
+    beyondstart2-web-80-https:
+      entrypoints:
+        - http-443
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-web-80"
+      
+      tls: true
+      
+    beyondstart2-web-8025-https:
+      entrypoints:
+        - http-8026
+      rule: HostRegexp(`^beyondstart2\.ddev\.site$`)
+      
+      service: "beyondstart2-web-8025"
+      
+      tls: true
+      
+    
+
+  middlewares:
+    beyondstart2-redirectHttps:
+      redirectScheme:
+        scheme: https
+        permanent: true
+
+  services:
+    beyondstart2-xhgui-80:
+      loadbalancer:
+        servers:
+          - url: http://ddev-beyondstart2-xhgui:80
+        
+    
+    beyondstart2-web-80:
+      loadbalancer:
+        servers:
+          - url: http://ddev-beyondstart2-web:80
+        
+    beyondstart2-web-8025:
+      loadbalancer:
+        servers:
+          - url: http://ddev-beyondstart2-web:8025
+        
+    
+    
+    
+
+tls:
+  certificates:
+    - certFile: /mnt/ddev-global-cache/traefik/certs/beyondstart2.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/beyondstart2.key

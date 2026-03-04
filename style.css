@@ -99,8 +99,7 @@ main {
 
 .site-header img {
     display: block;
-    width: 200px;
-    height: 56px;
+    width: 125px;
 }
 
 /* NAVIGATION MENU */
@@ -398,6 +397,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(0 0 0 / 80%);
+    padding: 10px;
 }
 
 .hero-title {
@@ -429,8 +430,6 @@ main {
 }
 
 .problem-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     max-width: 1024px;
     margin: 0 auto;
     text-align: center;
@@ -452,7 +451,6 @@ main {
 /* Services */
 
 .services-section {
-    padding: 5rem var(--font-size-xl);
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
@@ -750,7 +748,6 @@ main {
 
 /* About */
 .about-section {
-    padding: 5rem var(--font-size-xl);
     max-width: 960px;
     margin: 0 auto;
     text-align: center;
@@ -759,7 +756,7 @@ main {
 /* Contact */
 .contact-section {
     background-color: var(--color-bg-contact);
-    padding: 5rem var(--font-size-xl);
+    padding: 1rem var(--font-size-xl);
     text-align: center;
 }
 
@@ -778,7 +775,7 @@ main {
 /* CTA section */
 .cta-section {
     background-color: var(--color-bg-contact);
-    padding: 3rem var(--font-size-xl);
+    padding: 1rem var(--font-size-xl);
     text-align: center;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
