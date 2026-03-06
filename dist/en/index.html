@@ -35,8 +35,13 @@
     <link
       rel="preload"
       as="image"
-      href="/images/madmasel_hero_bg.webp"
-      type="image/webp"
+      href="/images/madmasel_hero_bg_orig.webp"
+      imagesrcset="
+        /images/madmasel_hero_bg_mobile.webp 640w,
+        /images/madmasel_hero_bg.webp 960w,
+        /images/madmasel_hero_bg_orig.webp 1320w
+    "
+      imagesizes="100vw"
       fetchpriority="high"
     />
     <link
@@ -144,11 +149,16 @@
       <section class="hero-section" aria-label="BeyondStart Solutions">
         <img
           class="hero-lcp-image"
-          src="/images/madmasel_hero_bg.webp"
+          src="/images/madmasel_hero_bg_orig.webp"
+          srcset="
+            /images/madmasel_hero_bg_mobile.webp  640w,
+            /images/madmasel_hero_bg.webp         960w,
+            /images/madmasel_hero_bg_orig.webp   1320w
+          "
+          sizes="100vw"
           alt="hero background"
           width="1319"
           height="522"
-          decoding="async"
           loading="eager"
           fetchpriority="high"
         />

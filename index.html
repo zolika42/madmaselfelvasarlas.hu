@@ -30,7 +30,18 @@
     <meta name="description"
           content="Biztonságos Drupal frissítés, gyors Laravel optimalizálás, konverziót növelő Shopify audit. 72 órán belüli megoldás garanciával.">
     <link rel="preload" href="/style.min.css" as="style">
-    <link rel="preload" as="image" href="/images/madmasel_hero_bg.webp" type="image/webp" fetchpriority="high">
+    <link
+    rel="preload"
+    as="image"
+    href="/images/madmasel_hero_bg_orig.webp"
+    imagesrcset="
+        /images/madmasel_hero_bg_mobile.webp 640w,
+        /images/madmasel_hero_bg.webp 960w,
+        /images/madmasel_hero_bg_orig.webp 1320w
+    "
+    imagesizes="100vw"
+    fetchpriority="high"
+    >   
     <link href="/style.min.css" rel="stylesheet" media="print" onload="this.onload=null;this.media='all';">
     <noscript>
         <link rel="stylesheet" href="/style.min.css">
@@ -107,15 +118,20 @@
     <!-- Hero -->
     <section class="hero-section" aria-label="BeyondStart Solutions">
         <img
-                class="hero-lcp-image"
-                src="/images/madmasel_hero_bg.webp"
-                alt="hero background"
-                width="1319"
-                height="522"
-                decoding="async"
-                loading="eager"
-                fetchpriority="high"
-        >
+            class="hero-lcp-image"
+            src="/images/madmasel_hero_bg_orig.webp"
+            srcset="
+                /images/madmasel_hero_bg_mobile.webp 640w,
+                /images/madmasel_hero_bg.webp 960w,
+                /images/madmasel_hero_bg_orig.webp 1320w
+            "
+            sizes="100vw"
+            alt="hero background"
+            width="1319"
+            height="522"
+            loading="eager"
+            fetchpriority="high"
+            >
         <div class="hero-overlay">
             <h1 class="hero-title" data-i18n="heroTitle">Drupal, Laravel vagy Shopify projekted káoszban van?</h1>
             <p class="hero-subtitle" data-i18n="heroSubtitle">
