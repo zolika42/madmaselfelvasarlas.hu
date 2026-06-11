@@ -27,16 +27,35 @@ module.exports = {
   },
   gtag: {
     GTAG_SNIPPET_AW_CODE,
-    GTAG_SNIPPET: `<script async src="https://www.googletagmanager.com/gtag/js?id=${GTAG_SNIPPET_AW_CODE}"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=${GTAG_SNIPPET_GA4_CODE}"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', '${GTAG_SNIPPET_AW_CODE}');
-    gtag('config', '${GTAG_SNIPPET_GA4_CODE}');
+    GTAG_SNIPPET: `<script>
+    (function () {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+
+        function loadGoogleTags() {
+            if (window.__madmaselTagsLoaded) return;
+            window.__madmaselTagsLoaded = true;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=${GTAG_SNIPPET_AW_CODE}';
+            document.head.appendChild(script);
+
+            window.gtag('js', new Date());
+            window.gtag('config', '${GTAG_SNIPPET_AW_CODE}');
+            window.gtag('config', '${GTAG_SNIPPET_GA4_CODE}');
+        }
+
+        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (eventName) {
+            window.addEventListener(eventName, loadGoogleTags, { once: true, passive: true });
+        });
+
+        if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadGoogleTags, { timeout: 7000 });
+        } else {
+            window.setTimeout(loadGoogleTags, 7000);
+        }
+    })();
 </script>`
   },
   log: {

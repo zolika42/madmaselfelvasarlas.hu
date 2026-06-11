@@ -364,6 +364,7 @@ main {
 /* Hero */
 
 .hero-section {
+    min-height: var(--hero-section-min-height, clamp(238px, 16vw, 360px));
     position: relative;
     height: 100vh;
     display: flex;
@@ -1900,4 +1901,13 @@ body.landing .form-lead-capture input[type="email"]:focus {
     background: transparent;
     color: #6b7280;
     cursor: pointer;
+}
+
+
+
+/* PageSpeed CLS fix: mobile hero reserved height */
+@media (width <= 768px) {
+    :root {
+        --hero-section-min-height: clamp(820px, 238vw, 1000px);
+    }
 }

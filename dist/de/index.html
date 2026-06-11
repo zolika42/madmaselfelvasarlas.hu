@@ -31,7 +31,7 @@
       name="description"
       content="Autoankauf landesweit, schnell und fair. Angebot in nur 15 Minuten, Hilfe beim Papierkram, Auszahlung vor Ort."
     />
-    <link rel="preload" href="/style.min.css" as="style" />
+    <link rel="stylesheet" href="/style.min.css" />
     <link
       rel="preload"
       as="image"
@@ -44,15 +44,6 @@
       imagesizes="100vw"
       fetchpriority="high"
     />
-    <link
-      href="/style.min.css"
-      rel="stylesheet"
-      media="print"
-      onload="this.onload=null;this.media='all';"
-    />
-    <noscript>
-      <link rel="stylesheet" href="/style.min.css" />
-    </noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -385,7 +376,13 @@
                 Kommunikation.“
               </p>
               <div class="author">
-                <img src="https://i.pravatar.cc/40?img=48" alt="Karina P." loading="lazy" />
+                <img
+                  src="https://i.pravatar.cc/40?img=48"
+                  width="40"
+                  height="40"
+                  alt="Karina P."
+                  loading="lazy"
+                />
                 <div class="author-name" data-i18n="testimonial3Author">– Gábor, Vác</div>
               </div>
             </blockquote>
@@ -413,7 +410,13 @@
                 „Pünktlich gekommen, schnelle Bewertung, sofortige Überweisung.“
               </p>
               <div class="author">
-                <img src="https://i.pravatar.cc/40?img=14" alt="Mark G." loading="lazy" />
+                <img
+                  src="https://i.pravatar.cc/40?img=14"
+                  width="40"
+                  height="40"
+                  alt="Mark G."
+                  loading="lazy"
+                />
                 <div class="author-name" data-i18n="testimonial5Author">– Kata, Győr</div>
               </div>
             </blockquote>
@@ -645,6 +648,17 @@
           "availableLanguage": ["Hungarian", "English", "German"]
         }
       }
+    </script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16905609495"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16882358510"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'AW-16905609495');
+      gtag('config', 'AW-16882358510');
     </script>
   </body>
 </html>
