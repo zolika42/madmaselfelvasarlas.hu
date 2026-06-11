@@ -33,8 +33,8 @@ module.exports = {
         window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
 
         function loadGoogleTags() {
-            if (window.__madmaselTagsLoaded) return;
-            window.__madmaselTagsLoaded = true;
+            if (window.__madmaselGoogleTagsLoaded) return;
+            window.__madmaselGoogleTagsLoaded = true;
 
             var script = document.createElement('script');
             script.async = true;
@@ -50,11 +50,9 @@ module.exports = {
             window.addEventListener(eventName, loadGoogleTags, { once: true, passive: true });
         });
 
-        if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(loadGoogleTags, { timeout: 7000 });
-        } else {
-            window.setTimeout(loadGoogleTags, 7000);
-        }
+        window.addEventListener('load', function () {
+            window.setTimeout(loadGoogleTags, 15000);
+        }, { once: true });
     })();
 </script>`
   },

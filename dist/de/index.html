@@ -47,7 +47,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="preconnect" href="https://connect.facebook.net" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta
       property="og:title"
@@ -605,24 +604,44 @@
     <script src="/script.min.js" defer=""></script>
     <!-- Meta Pixel Code -->
     <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '800676979731768');
-      fbq('track', 'PageView');
+      (function () {
+        function loadFacebookPixel() {
+          if (window.__madmaselFacebookPixelLoaded) return;
+          window.__madmaselFacebookPixelLoaded = true;
+
+          !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+              n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+          })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+          fbq('init', '800144528958074');
+          fbq('track', 'PageView');
+        }
+
+        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (eventName) {
+          window.addEventListener(eventName, loadFacebookPixel, { once: true, passive: true });
+        });
+
+        window.addEventListener(
+          'load',
+          function () {
+            window.setTimeout(loadFacebookPixel, 15000);
+          },
+          { once: true }
+        );
+      })();
     </script>
     <noscript
       ><img
@@ -649,16 +668,41 @@
         }
       }
     </script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16905609495"></script>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-16882358510"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', 'AW-16905609495');
-      gtag('config', 'AW-16882358510');
+      (function () {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag =
+          window.gtag ||
+          function () {
+            window.dataLayer.push(arguments);
+          };
+
+        function loadGoogleTags() {
+          if (window.__madmaselGoogleTagsLoaded) return;
+          window.__madmaselGoogleTagsLoaded = true;
+
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16905609495';
+          document.head.appendChild(script);
+
+          window.gtag('js', new Date());
+          window.gtag('config', 'AW-16905609495');
+          window.gtag('config', 'AW-16882358510');
+        }
+
+        ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (eventName) {
+          window.addEventListener(eventName, loadGoogleTags, { once: true, passive: true });
+        });
+
+        window.addEventListener(
+          'load',
+          function () {
+            window.setTimeout(loadGoogleTags, 15000);
+          },
+          { once: true }
+        );
+      })();
     </script>
   </body>
 </html>
